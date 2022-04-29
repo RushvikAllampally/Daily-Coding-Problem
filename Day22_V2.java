@@ -16,6 +16,10 @@ public class Day22_V2 {
 		
 		String s = "thebedroomisclean" ;
 		
+		/**
+		 * got output as  the , bedroom , is , clean
+		 */
+		
 		boolean[] arr = new boolean[s.length()];
         List<String> list = new ArrayList<>();
              
