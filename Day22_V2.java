@@ -23,7 +23,7 @@ public class Day22_V2 {
 		boolean[] arr = new boolean[s.length()];
         List<String> list = new ArrayList<>();
              
-	  if(wordBreak(s,str,arr,list)) {
+	  if(getReconstruction(s,str,arr,list)) {
 	  
 	  Collections.reverse(list);
 	 
@@ -36,7 +36,7 @@ public class Day22_V2 {
 
 	}
 
-    public static boolean wordBreak(String s, List<String> wordDict,boolean[] arr ,List<String> list) {    
+    public static boolean getReconstruction(String s, List<String> wordDict,boolean[] arr ,List<String> list) {    
         if (s.length() == 0) {
             return true;
             
@@ -46,7 +46,7 @@ public class Day22_V2 {
         
         for (String word : wordDict) {
             if (s.startsWith(word) 
-                && wordBreak(s.substring(word.length()), wordDict, arr,list)) {
+                && getReconstruction(s.substring(word.length()), wordDict, arr,list)) {
                 list.add(word);
                 return true;
             }
