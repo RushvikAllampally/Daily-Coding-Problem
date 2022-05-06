@@ -1,4 +1,4 @@
-import java.util.ArrayDeque;
+import java.util.*;
 
 public class paranthesis {
 
@@ -6,8 +6,12 @@ public class paranthesis {
 		
 		String str = "({[]})";
 		System.out.println(isValid(str));
+		
+		
 
 	}
+	
+	
 	
 	 public static boolean isValid(String s) {
 	       

@@ -19,7 +19,7 @@ public class Day25 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String s = "aab";
+		String s = "aaab";
 		String p="a*b";
 		System.out.println(isMatch(s,p));
 	}
