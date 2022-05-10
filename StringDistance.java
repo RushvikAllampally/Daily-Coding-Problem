@@ -12,8 +12,8 @@ refers to the minimum number of character insertions,
 
 Given two strings, compute the edit distance between 
 them.
-
-
+Two pointer approach will fail in case of "kitty" & "kittey" 
+                             "horse" & "rse"
  * @author Rushvik
  *
  */
@@ -56,6 +56,8 @@ public class StringDistance {
                 dist(X, m, Y, n - 1) + 1,           // insertion (case 3b))
                 dist(X, m - 1, Y, n - 1) + cost);   // substitution (case 2 & 3c)
     }
+    
+    
  
    
 }
